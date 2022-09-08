@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00edabe3-9573-4fad-a808-ddb0e0180832" name="Changes" comment="add tp1 basic threads">
+      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/TP1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/data/TP1.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basicThread/CommandBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicThread/CommandBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basicThread/MainCommandBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicThread/MainCommandBuffer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +43,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Project.color": "5f1860",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ttper/Documents/Télécom/SLR201",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.general"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager" selected="Application.MainCommandBuffer">
@@ -88,6 +93,8 @@
       <option name="presentableId" value="Default" />
       <updated>1662626201927</updated>
       <workItem from="1662626205760" duration="3759000" />
+      <workItem from="1662646764216" duration="715000" />
+      <workItem from="1662647494087" duration="251000" />
     </task>
     <task id="LOCAL-00001" summary="add tp1 basic threads">
       <created>1662629251149</created>
