@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00edabe3-9573-4fad-a808-ddb0e0180832" name="Changes" comment="fin tp1 mise en forme">
+    <list default="true" id="00edabe3-9573-4fad-a808-ddb0e0180832" name="Changes" comment="reformat code + deadlock, livelock">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/data/~$TP1.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/deadlocks/DeadlockExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/deadlocks/MainDeadlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/deadlocks/T1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/deadlocks/T2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livelocks/LivelockExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livelocks/MainLivelock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livelocks/T1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/livelocks/T2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/TP1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/data/TP1.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +133,7 @@
       <workItem from="1662626205760" duration="4078000" />
       <workItem from="1662970849244" duration="100000" />
       <workItem from="1662970968425" duration="3436000" />
-      <workItem from="1662974472820" duration="853000" />
+      <workItem from="1662974472820" duration="1259000" />
     </task>
     <task id="LOCAL-00001" summary="add tp1 basic threads">
       <created>1662629251149</created>
@@ -163,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662970902831</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="reformat code + deadlock, livelock">
+      <created>1662975414804</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662975414804</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +185,7 @@
     <MESSAGE value="add tp1 basic threads" />
     <MESSAGE value="add things on report" />
     <MESSAGE value="fin tp1 mise en forme" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin tp1 mise en forme" />
+    <MESSAGE value="reformat code + deadlock, livelock" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformat code + deadlock, livelock" />
   </component>
 </project>
