@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00edabe3-9573-4fad-a808-ddb0e0180832" name="Changes" comment="add tp1 basic threads">
+    <list default="true" id="00edabe3-9573-4fad-a808-ddb0e0180832" name="Changes" comment="add things on report">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/TP1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/data/TP1.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basicThread/MainCommandBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basicThread/MainCommandBuffer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b25faaeb-16dd-47ba-8732-8e6094d64535" />
+        <option name="url" value="git@github.com:ttperr/SLR201.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/SLR201.iml" root0="FORCE_HIGHLIGHTING" />
@@ -38,16 +46,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.general"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.MainCommandBuffer">
     <configuration name="MainCommandBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basicThread.MainCommandBuffer" />
@@ -87,7 +95,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662626201927</updated>
-      <workItem from="1662626205760" duration="3759000" />
+      <workItem from="1662626205760" duration="4078000" />
+      <workItem from="1662970849244" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="add tp1 basic threads">
       <created>1662629251149</created>
@@ -96,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662629251149</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add things on report">
+      <created>1662630167558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662630167558</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +131,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add tp1 basic threads" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tp1 basic threads" />
+    <MESSAGE value="add things on report" />
+    <option name="LAST_COMMIT_MESSAGE" value="add things on report" />
   </component>
 </project>

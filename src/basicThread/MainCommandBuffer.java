@@ -11,10 +11,6 @@ public class MainCommandBuffer {
 
         try {
             pushThread.join();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        try {
             pullThread.join();
         } catch (Exception e) {
             e.printStackTrace();
