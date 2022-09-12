@@ -22,14 +22,14 @@ public class Philosopher extends Thread {
         } else {
             currentState = "eating";
         }
-        return "Philosopher [id =" + id + ", leftFork = " + leftFork + ", rightFork = " + rightFork + ", state = " + currentState + "]";
+        return "Philosopher [id = " + id + ", leftFork = " + leftFork + ", rightFork = " + rightFork + ", state = " + currentState + "]";
     }
 
-    public final void think() {
+    public synchronized void think() {
         this.state = 0; // thinking
         Log.msg("Philosopher " + id + " is thinking");
         try {
-            Thread.sleep((long) (Math.random() * 257));
+            Thread.sleep((long) (Math.random() * 256));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -41,21 +41,24 @@ public class Philosopher extends Thread {
         Log.msg("Philosopher " + id + " is hungry");
         try {
             while (true) {
-                if (!leftFork.isTaken() || leftFork.isTakenBy() == this.id) {
+                if (leftFork.isFree() || leftFork.isTakenBy() == this.id) {
                     leftFork.take(id);
-                    if (!rightFork.isTaken()) {
+                    if (rightFork.isFree()) {
                         rightFork.take(id);
                         this.state = 2; // eating
                         Log.msg("Philosopher " + id + " is eating");
-                        Thread.sleep(1000);
+                        Thread.sleep(256);
                         leftFork.release();
                         rightFork.release();
+                        Log.msg("Philosopher " + id + " has finished eating and released the forks: " + leftFork + " and " + rightFork);
                         notifyAll();
                         break;
                     } else {
+                        Log.msg("Philosopher " + id + " is waiting for " + rightFork);
                         wait();
                     }
                 } else {
+                    Log.msg("Philosopher " + id + " is waiting for " + leftFork);
                     wait();
                 }
             }
@@ -66,9 +69,7 @@ public class Philosopher extends Thread {
     }
 
     public void run() {
-        for (int i = 0; i < 10; i++) {
-            think();
-        }
+        think();
     }
 
 }

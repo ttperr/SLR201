@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00edabe3-9573-4fad-a808-ddb0e0180832" name="Changes" comment="add things to gitignore">
-      <change afterPath="$PROJECT_DIR$/src/philosophers/Diner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/philosophers/Fork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/philosophers/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/philosophers/Philosopher.java" afterDir="false" />
+    <list default="true" id="00edabe3-9573-4fad-a808-ddb0e0180832" name="Changes" comment="end of tp1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/TP1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/data/TP1.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/philosophers/Fork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/philosophers/Fork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/philosophers/Philosopher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/philosophers/Philosopher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +20,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -55,17 +53,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MTConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Diner">
     <configuration name="Diner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="philosophers.Diner" />
