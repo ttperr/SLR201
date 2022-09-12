@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="00edabe3-9573-4fad-a808-ddb0e0180832" name="Changes" comment="end of tp1">
+    <list default="true" id="00edabe3-9573-4fad-a808-ddb0e0180832" name="Changes" comment="essaie philosopher">
+      <change afterPath="$PROJECT_DIR$/src/ioStreams/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ioStreams/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/philosophers/Fork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/philosophers/Fork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/philosophers/Philosopher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/philosophers/Philosopher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,13 +64,18 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Diner">
-    <configuration name="Diner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="philosophers.Diner" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ttper\Documents\Télécom\SLR201\src\ioStreams" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ioStreams.Client" />
       <module name="SLR201" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="philosophers.*" />
+          <option name="PATTERN" value="ioStreams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainCommandBuffer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basicThread.MainCommandBuffer" />
+    <configuration name="Diner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="philosophers.Diner" />
       <module name="SLR201" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basicThread.*" />
+          <option name="PATTERN" value="philosophers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,19 +129,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ioStreams.Server" />
+      <module name="SLR201" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ioStreams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.MainMyThread" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Server" />
       <item itemvalue="Application.Diner" />
       <item itemvalue="Application.MainDeadlock" />
       <item itemvalue="Application.MainLivelock" />
-      <item itemvalue="Application.MainCommandBuffer" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
         <item itemvalue="Application.Diner" />
         <item itemvalue="Application.MainLivelock" />
         <item itemvalue="Application.MainDeadlock" />
-        <item itemvalue="Application.MainCommandBuffer" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662975780094</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="essaie philosopher">
+      <created>1663001613879</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663001613879</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +241,7 @@
     <MESSAGE value="fin tp1 mise en forme" />
     <MESSAGE value="reformat code + deadlock, livelock" />
     <MESSAGE value="add things to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add things to gitignore" />
+    <MESSAGE value="essaie philosopher" />
+    <option name="LAST_COMMIT_MESSAGE" value="essaie philosopher" />
   </component>
 </project>
