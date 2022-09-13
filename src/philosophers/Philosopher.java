@@ -2,9 +2,9 @@ package philosophers;
 
 public class Philosopher extends Thread {
     private final int id;
-    private int state; // 0 = thinking, 1 = hungry, 2 = eating
     private final Fork leftFork;
     private final Fork rightFork;
+    private int state; // 0 = thinking, 1 = hungry, 2 = eating
 
     public Philosopher(int id, Fork leftFork, Fork rightFork) {
         this.id = id;

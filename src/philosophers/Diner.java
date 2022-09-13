@@ -18,7 +18,7 @@ public class Diner {
 
         System.out.println(Arrays.toString(philosophers));
 
-        for(Philosopher philosopher : philosophers) {
+        for (Philosopher philosopher : philosophers) {
             philosopher.start();
         }
     }

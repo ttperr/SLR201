@@ -1,8 +1,8 @@
 package philosophers;
 
 public class Fork {
-    private int takenBy;
     private final int id;
+    private int takenBy;
 
     public Fork(int id) {
         this.id = id;
