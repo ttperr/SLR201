@@ -2,27 +2,25 @@ package basicThread;
 
 public class CommandBuffer {
 
+    // An array to store the commands to be executed
+    private final String[] commands = new String[1024];
+    // Index where to store the next arriving command
+    // Condition: (nextStoreIdx + 1) % 1024 != lastTakeIdx
+    private int nextStoreIdx = 0;
+    // Index where to take the next command to execute // Condition: nextTakeIdx != nextStoreIdx
+    private int nextTakeIdx = 0;
+
     public String[] getCommands() {
         return commands;
     }
-
-    // An array to store the commands to be executed
-    private final String[] commands = new String[1024];
 
     public int getNextStoreIdx() {
         return nextStoreIdx;
     }
 
-    // Index where to store the next arriving command
-    // Condition: (nextStoreIdx + 1) % 1024 != lastTakeIdx
-    private int nextStoreIdx = 0;
-
     public int getNextTakeIdx() {
         return nextTakeIdx;
     }
-
-    // Index where to take the next command to execute // Condition: nextTakeIdx != nextStoreIdx
-    private int nextTakeIdx = 0;
 
     public synchronized String popCommand() {
         try {

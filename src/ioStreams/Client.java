@@ -32,6 +32,14 @@ public class Client {
         }
     }
 
+    public static void main(String[] args) {
+        Client client = new Client();
+        client.sendMessage("World\n");
+        String msg = client.readMessage();
+        System.out.println("Server said : " + msg);
+
+    }
+
     public String readMessage() {
         String message = null;
         try {
@@ -45,13 +53,5 @@ public class Client {
     public void sendMessage(String msg) {
         this.writer.println(msg);
         this.writer.flush();
-    }
-
-    public static void main(String[] args) {
-        Client client = new Client();
-        client.sendMessage("World\n");
-        String msg = client.readMessage();
-        System.out.println("Server said : " + msg);
-
     }
 }

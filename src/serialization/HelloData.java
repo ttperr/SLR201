@@ -22,12 +22,12 @@ public class HelloData implements java.io.Serializable {
         return number;
     }
 
-    public String getMessage() {
-        return message;
-    }
-
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    public String getMessage() {
+        return message;
     }
 
     public void setMessage(String message) {

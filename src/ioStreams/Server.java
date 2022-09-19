@@ -30,6 +30,13 @@ public class Server {
         }
     }
 
+    public static void main(String[] args) {
+        Server server = new Server();
+        String msg = server.readMessage();
+        System.out.println("Client said : " + msg);
+        server.sendMessage("Hello " + msg);
+    }
+
     public String readMessage() {
         String message = null;
         try {
@@ -43,12 +50,5 @@ public class Server {
     public void sendMessage(String msg) {
         this.serverWriter.println(msg);
         this.serverWriter.flush();
-    }
-
-    public static void main(String[] args) {
-        Server server = new Server();
-        String msg = server.readMessage();
-        System.out.println("Client said : " + msg);
-        server.sendMessage("Hello " + msg);
     }
 }
