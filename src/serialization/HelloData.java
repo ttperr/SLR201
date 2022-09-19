@@ -41,4 +41,8 @@ public class HelloData implements java.io.Serializable {
     public void setTransientMessage(String transientMessage) {
         this.transientMessage = transientMessage;
     }
+
+    public String toString() {
+        return "HelloData [number=" + number + ", message=" + message + ", transientMessage=" + transientMessage + "]";
+    }
 }

@@ -6,24 +6,22 @@ import java.net.Socket;
 
 public class Server {
     public static final int PORT = 50000;
-    private ServerSocket serverSocket;
-    private Socket socket;
 
     private PrintWriter serverWriter;
     private BufferedReader serverReader;
 
     public Server() {
         try {
-            this.serverSocket = new ServerSocket(Server.PORT);
-            this.socket = serverSocket.accept();
+            ServerSocket serverSocket = new ServerSocket(Server.PORT);
+            Socket socket = serverSocket.accept();
 
-            OutputStream os = this.socket.getOutputStream();
+            OutputStream os = socket.getOutputStream();
             OutputStreamWriter ow = new OutputStreamWriter(os);
-            this.serverWriter = new PrintWriter(ow);
+            serverWriter = new PrintWriter(ow);
 
-            InputStream is = this.socket.getInputStream();
+            InputStream is = socket.getInputStream();
             InputStreamReader ir = new InputStreamReader(is);
-            this.serverReader = new BufferedReader(ir);
+            serverReader = new BufferedReader(ir);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -40,7 +38,7 @@ public class Server {
     public String readMessage() {
         String message = null;
         try {
-            message = this.serverReader.readLine();
+            message = serverReader.readLine();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -48,7 +46,7 @@ public class Server {
     }
 
     public void sendMessage(String msg) {
-        this.serverWriter.println(msg);
-        this.serverWriter.flush();
+        serverWriter.println(msg);
+        serverWriter.flush();
     }
 }

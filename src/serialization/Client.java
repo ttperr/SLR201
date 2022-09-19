@@ -1,4 +1,4 @@
-package ioStreams;
+package serialization;
 
 import java.io.*;
 import java.net.InetAddress;
@@ -8,8 +8,8 @@ import java.net.SocketAddress;
 
 public class Client {
 
-    private PrintWriter writer;
-    private BufferedReader reader;
+    private ObjectOutputStream writer;
+    private ObjectInputStream reader;
 
     public Client() {
         try {
@@ -19,12 +19,10 @@ public class Client {
             socket.connect(socketAddress);
 
             OutputStream os = socket.getOutputStream();
-            OutputStreamWriter ow = new OutputStreamWriter(os);
-            writer = new PrintWriter(ow);
+            writer = new ObjectOutputStream(os);
 
             InputStream is = socket.getInputStream();
-            InputStreamReader ir = new InputStreamReader(is);
-            reader = new BufferedReader(ir);
+            reader = new ObjectInputStream(is);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -33,24 +31,26 @@ public class Client {
 
     public static void main(String[] args) {
         Client client = new Client();
-        client.sendMessage("World\n");
-        String msg = client.readMessage();
-        System.out.println("Server said : " + msg);
-
+        HelloData data = client.readData();
+        System.out.println("After serialization : " + data);
     }
 
-    public String readMessage() {
-        String message = null;
+    public HelloData readData() {
+        HelloData data = null;
         try {
-            message = this.reader.readLine();
+            data = (HelloData) reader.readObject();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return message;
+        return data;
     }
 
-    public void sendMessage(String msg) {
-        writer.println(msg);
-        writer.flush();
+    public void sendData(HelloData data) {
+        try {
+            writer.writeObject(data);
+            writer.flush();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
